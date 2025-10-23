@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<zabbix_export>
+    <version>7.0</version>
+    <template_groups>
+        <template_group>
+            <uuid>95c2a63b8c58442aa939c9cd3ddd1cb9</uuid>
+            <name>Wazuh Servers</name>
+        </template_group>
+    </template_groups>
+    <templates>
+        <template>
+            <uuid>1fcbf1b1f06b4a2ca924b61649817730</uuid>
+            <template>Wazuh Manager</template>
+            <name>Wazuh Manager</name>
+            <groups>
+                <group>
+                    <name>Wazuh Servers</name>
+                </group>
+            </groups>
+            <items>
+                <item>
+                    <uuid>e3f7508c528c43c2aa908d4b1fae20b3</uuid>
+                    <name>Wazuh Manager — Connected Agents</name>
+                    <key>wazuh.manager.agents.connected</key>
+                </item>
+                <item>
+                    <uuid>b433d26d766f4f5f897c7ab5788e9fde</uuid>
+                    <name>Wazuh Manager — Disconnected Agents</name>
+                    <key>wazuh.manager.agents.disconnected</key>
+                </item>
+                <item>
+                    <uuid>4dc3ce1dcc084383a39187d908a2a81b</uuid>
+                    <name>Wazuh Manager — Total Agents</name>
+                    <key>wazuh.manager.agents.total</key>
+                </item>
+                <item>
+                    <uuid>831a69bc552645dc8d604cb8a6f2fff9</uuid>
+                    <name>Wazuh Manager — API Status Code</name>
+                    <key>wazuh.manager.api.status</key>
+                </item>
+                <item>
+                    <uuid>1c19b5009437401c9c97ff12ac2d954c</uuid>
+                    <name>Wazuh Manager — API Version</name>
+                    <key>wazuh.manager.api.version</key>
+                    <value_type>TEXT</value_type>
+                    <trends>0</trends>
+                </item>
+                <item>
+                    <uuid>bdfdd994826f4c5e97fd037a0373ce88</uuid>
+                    <name>Wazuh Manager — Disk Free (bytes)</name>
+                    <key>wazuh.manager.disk.free</key>
+                    <units>B</units>
+                </item>
+                <item>
+                    <uuid>e2650ce0a8414a909bdab8cd86bbba00</uuid>
+                    <name>Wazuh Manager — Disk Total (bytes)</name>
+                    <key>wazuh.manager.disk.total</key>
+                    <units>B</units>
+                </item>
+                <item>
+                    <uuid>a0019e28a5a34d748ea664e1f88b7897</uuid>
+                    <name>Wazuh Manager — Healthcheck</name>
+                    <key>wazuh.manager.healthcheck</key>
+                </item>
+                <item>
+                    <uuid>bf17a7e35a49429f8e1ad6ca1196e4c9</uuid>
+                    <name>Wazuh Manager — Porta 1415 (Cluster)</name>
+                    <key>wazuh.manager.port.1415</key>
+                </item>
+                <item>
+                    <uuid>d88d8f88c5284f76ba232711c07d5e91</uuid>
+                    <name>Wazuh Manager — Porta 1514 (Logs)</name>
+                    <key>wazuh.manager.port.1514</key>
+                </item>
+                <item>
+                    <uuid>15f2b61ad22b481b8604776f2b497d5d</uuid>
+                    <name>Wazuh Manager — Porta 1515 (Agent Auth)</name>
+                    <key>wazuh.manager.port.1515</key>
+                </item>
+                <item>
+                    <uuid>26161cebfad644d597b31d3e8c7d8d74</uuid>
+                    <name>Wazuh Manager — Porta 55000 (API)</name>
+                    <key>wazuh.manager.port.55000</key>
+                </item>
+                <item>
+                    <uuid>9792ed7c3aa34f1f91339c8488fc5546</uuid>
+                    <name>Wazuh Manager — Service Status</name>
+                    <key>wazuh.manager.service</key>
+                    <value_type>TEXT</value_type>
+                    <trends>0</trends>
+                </item>
+            </items>
+        </template>
+    </templates>
+</zabbix_export>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<zabbix_export>
+    <version>7.0</version>
+    <template_groups>
+        <template_group>
+            <uuid>95c2a63b8c58442aa939c9cd3ddd1cb9</uuid>
+            <name>Wazuh Servers</name>
+        </template_group>
+    </template_groups>
+    <templates>
+        <template>
+            <uuid>97510ee3b18e45a4aa9cd8aae6629002</uuid>
+            <template>Wazuh Indexer</template>
+            <name>Wazuh Indexer</name>
+            <groups>
+                <group>
+                    <name>Wazuh Servers</name>
+                </group>
+            </groups>
+            <items>
+                <item>
+                    <uuid>55d88f44ab4e49188048fe98ed23ec15</uuid>
+                    <name>Wazuh Indexer — Active Primary Shards</name>
+                    <key>wazuh.indexer.cluster.active_primary_shards</key>
+                </item>
+                <item>
+                    <uuid>be4f7027663e4bc0ace35f64b0c5de9f</uuid>
+                    <name>Wazuh Indexer — Cluster Health (Raw JSON)</name>
+                    <key>wazuh.indexer.cluster.health.raw</key>
+                    <value_type>TEXT</value_type>
+                    <trends>0</trends>
+                </item>
+                <item>
+                    <uuid>b8b404b06f614aaa9dad44e20a5a78ee</uuid>
+                    <name>Wazuh Indexer — Cluster Status</name>
+                    <key>wazuh.indexer.cluster.status</key>
+                    <value_type>TEXT</value_type>
+                    <trends>0</trends>
+                </item>
+                <item>
+                    <uuid>d564f3ddbf4941cea607a263ba0ab160</uuid>
+                    <name>Wazuh Indexer — Unassigned Shards</name>
+                    <key>wazuh.indexer.cluster.unassigned_shards</key>
+                </item>
+                <item>
+                    <uuid>54c79a104b48465bb8d58858ca1e9be0</uuid>
+                    <name>Wazuh Indexer — Available Bytes</name>
+                    <key>wazuh.indexer.fs.available_bytes</key>
+                    <units>B</units>
+                </item>
+                <item>
+                    <uuid>c1b65079209c4b068900ca276ad344d0</uuid>
+                    <name>Wazuh Indexer — Total Bytes</name>
+                    <key>wazuh.indexer.fs.total_bytes</key>
+                </item>
+                <item>
+                    <uuid>a8fe93f1397746edae19e79f8caac343</uuid>
+                    <name>Wazuh Indexer — HTTP Status Code</name>
+                    <key>wazuh.indexer.http_code</key>
+                </item>
+                <item>
+                    <uuid>b6ab1d2c7f0b47a2b63f705c9af378a8</uuid>
+                    <name>Wazuh Indexer — CPU Percent</name>
+                    <key>wazuh.indexer.node.cpu_percent</key>
+                    <value_type>FLOAT</value_type>
+                    <units>%</units>
+                </item>
+                <item>
+                    <uuid>339db52fc23a45d4869345be1154d535</uuid>
+                    <name>Wazuh Indexer — Heap Percent</name>
+                    <key>wazuh.indexer.node.heap_percent</key>
+                    <units>%</units>
+                </item>
+                <item>
+                    <uuid>9f5db85bb74a4893860361f91902f905</uuid>
+                    <name>Wazuh Indexer — Node Name</name>
+                    <key>wazuh.indexer.node.name</key>
+                    <value_type>TEXT</value_type>
+                    <trends>0</trends>
+                </item>
+            </items>
+        </template>
+    </templates>
+</zabbix_export>
