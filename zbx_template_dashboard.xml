@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<zabbix_export>
+    <version>7.0</version>
+    <template_groups>
+        <template_group>
+            <uuid>95c2a63b8c58442aa939c9cd3ddd1cb9</uuid>
+            <name>Wazuh Servers</name>
+        </template_group>
+    </template_groups>
+    <templates>
+        <template>
+            <uuid>0b585d4f2cd245ccba62f7b105acfe08</uuid>
+            <template>Wazuh Dashboard</template>
+            <name>Wazuh Dashboard</name>
+            <groups>
+                <group>
+                    <name>Wazuh Servers</name>
+                </group>
+            </groups>
+            <items>
+                <item>
+                    <uuid>c16ec02f53684ea28f3044d01ae62816</uuid>
+                    <name>Wazuh Dashboard — API HTTP Code</name>
+                    <key>wazuh.dashboard.api.status</key>
+                </item>
+                <item>
+                    <uuid>906321e825b74fd885da48cf03a629c6</uuid>
+                    <name>Wazuh Dashboard — CPU (%)</name>
+                    <key>wazuh.dashboard.cpu.percent</key>
+                </item>
+                <item>
+                    <uuid>b3f911553e2b4551aa3aadcbb204a64c</uuid>
+                    <name>Wazuh Dashboard — Memory Usage (MB)</name>
+                    <key>wazuh.dashboard.mem.mb</key>
+                </item>
+                <item>
+                    <uuid>5681841d2d1e4c1fa1f7fc0eade1e0da</uuid>
+                    <name>Wazuh Dashboard — Port 443</name>
+                    <key>wazuh.dashboard.port.443</key>
+                </item>
+                <item>
+                    <uuid>090db00a5fb5438ea1ad6186fa16dab0</uuid>
+                    <name>Wazuh Dashboard — Process Count</name>
+                    <key>wazuh.dashboard.process.count</key>
+                </item>
+                <item>
+                    <uuid>47387bf21d374d7092bbbb450e7d4195</uuid>
+                    <name>Wazuh Dashboard — Service Status</name>
+                    <key>wazuh.dashboard.service</key>
+                    <value_type>TEXT</value_type>
+                    <trends>0</trends>
+                </item>
+                <item>
+                    <uuid>c0d83f961375485ca4fc4a7872b06e40</uuid>
+                    <name>Wazuh Dashboard — SSL Days Left</name>
+                    <key>wazuh.dashboard.ssl.daysleft</key>
+                    <units>dias</units>
+                </item>
+                <item>
+                    <uuid>1f10318c7eb6405a8d67c12801c5f5f2</uuid>
+                    <name>Wazuh Dashboard — Indexer Connectivity</name>
+                    <key>wazuh.dashboard.to.indexer</key>
+                </item>
+                <item>
+                    <uuid>bd13c798e4d74301b2ad925ddcb73460</uuid>
+                    <name>Wazuh Dashboard — Manager Connectivity</name>
+                    <key>wazuh.dashboard.to.manager</key>
+                </item>
+                <item>
+                    <uuid>18b1196300cb435d974a20916533a5de</uuid>
+                    <name>Wazuh Dashboard — Uptime (min)</name>
+                    <key>wazuh.dashboard.uptime.min</key>
+                </item>
+            </items>
+        </template>
+    </templates>
+</zabbix_export>
